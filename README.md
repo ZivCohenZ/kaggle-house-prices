@@ -1,4 +1,3 @@
-
 House Prices: Advanced Regression Techniques
 
 My solution for the House Prices competition hosted on Kaggle.
@@ -25,4 +24,3 @@ files:
   
 6. Stacking.py:
    Stacking class
-
