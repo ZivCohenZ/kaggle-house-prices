@@ -22,5 +22,5 @@ files:
 5.BayesianOptimization_XGB.py:  
   train and optimized xgboost using BayesianOptimization library
   
-6. Stacking.py: 
+6.Stacking.py: 
    Stacking class
