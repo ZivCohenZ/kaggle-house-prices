@@ -19,8 +19,8 @@ files:
 4.TrainAndTest.py:   
    load files created in CreateFileToTrain.py and train + stack it by using BayesianOptimization_XGB.py, Stacking.py
    
-5.BayesianOptimization_XGB.py:  
+5.BayesianOptimization_XGB.py:    
   train and optimized xgboost using BayesianOptimization library
   
-6.Stacking.py: 
+6.Stacking.py:   
    Stacking class
