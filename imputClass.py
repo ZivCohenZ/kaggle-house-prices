@@ -5,7 +5,7 @@ Created on Fri Jul  6 00:00:33 2018
 @author: ziv
 """
 
-#input numeric value by using random forest
+
 import pandas as pd
 
 import warnings
