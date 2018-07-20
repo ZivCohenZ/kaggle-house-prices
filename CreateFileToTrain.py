@@ -33,7 +33,7 @@ OUTTER = list(set(test)-set(NEMBERS + CAT1 +CAT2)  )
 
 #pd.concat([test, train])[cols].isnull().sum().sort_values(ascending=False).head(40)
 
-from PipeLibClass import PipeJoin,PipeGetColumn,PipeCatToNumeric,PipeFillZero,PipeFillNone,PipeMode,PipeYearsLog,PipePasteFeature
+from PipeLineClass import PipeJoin,PipeGetColumn,PipeCatToNumeric,PipeFillZero,PipeFillNone,PipeMode,PipeYearsLog,PipePasteFeature
 from sklearn.pipeline import Pipeline
 
 pipeline1 = Pipeline([
