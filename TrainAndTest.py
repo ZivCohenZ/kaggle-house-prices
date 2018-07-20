@@ -1,14 +1,14 @@
-"""
+
 
 import pandas as pd
 import numpy as np
 from BayesianOptimization_XGB import rmsle_cv,xgb_model
 from Stacking import BaseStacking
 
-X = pd.read_pickle('../input/train_1.pkl')
+X = pd.read_pickle('train_1.pkl')
 
 
-y=pd.read_pickle('../input/y_1.pkl')
+y=pd.read_pickle('y_1.pkl')
 y=np.log1p(y)
 
 
@@ -43,4 +43,4 @@ averaged_models
 #averaged_models = BaseStacking(models = (model2.GetModel(), model.GetModel()))
 
 score = rmsle_cv(averaged_models,X,y,5,15654)
-print(" Averaged base models score: {:.4f} ({:.4f})\n".format(score.mean(), score.std()
+print(" Averaged base models score: {:.4f} ({:.4f})\n".format(score.mean(), score.std()))
