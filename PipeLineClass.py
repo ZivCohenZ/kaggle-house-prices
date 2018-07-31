@@ -61,6 +61,7 @@ class PipeCatToNumeric(TransformerMixin):
     def transform(self, X):
        for selfgrp in self.grp:
 #           print (selfgrp)
+           X[selfgrp] =X[selfgrp].astype(str)
            a=X.groupby(selfgrp)[[self.target]].agg(['median']).reset_index()
            a.columns = [selfgrp,'t_median']
            a=a.sort_values('t_median')
